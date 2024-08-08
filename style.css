@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'Blacksword';
+    src: url('./fonts/Blacksword.woff2') format('woff2'),
+        url('./fonts/Blacksword.woff') format('woff'),
+        url('./fonts/Blacksword.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Evelins';
+    src: url('fonts/EvelinsRegular_1.woff2') format('woff2'),
+        url('fonts/EvelinsRegular_1.woff') format('woff'),
+        url('fonts/EvelinsRegular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --cor1: #FFFFFF;
+    --cor2: #9EC8E5;
+    --cor3: #153851;
+    --cor5: #050505;
+}
+
+
+
+body{
+    position: relative;
+    background-image: url(./imgs/fd.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.me{
+    z-index: 1;
+    pointer-events: none; 
+    position: absolute;
+    max-width: 500px;
+    left: 64em;
+    top: 30em;
+    filter: drop-shadow(5px 0px 5px  rgba(0, 0, 0, 0.7));
+}
+
+/* Nav Bar / Header */
+header {
+    background-color: var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    color: white;
+    box-shadow: -20px 50px 100px var(--cor3);
+}
+header nav {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.btn-nav {
+    width: 6.5em;
+    padding: 2px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    color: var(--cor1);
+    font-family: 'Evelins';
+    font-weight: normal;
+
+
+}
+
+.btn-nav:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: var(--cor2);
+    box-shadow: 0px 5px 30px rgba(212, 145, 12, 0.500);
+}
+
+/* Main */
+
+section {
+    min-height: 90vh;
+    overflow: hidden;
+}
+
+/* Boco 1 - Apresentação */
+
+#hello {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0em 0em 0em;
+  
+}
+
+.artigo {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: inset 5px var(--cor1);
+    width: 50%;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 20px;
+    gap: 2em;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    box-shadow: 0px 5px 30px var(--cor5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.artigo h1{
+    font-size: 2.5em;
+    font-family: 'Evelins';
+    font-weight: normal;
+}
+.artigo h4{
+    font-size: 2em;
+    font-family: 'Evelins';
+    font-weight: normal;
+}
+
+
+#btn-hello {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+#btn-hello button {
+    border: none;
+    height: 2em;
+    width: 9em;
+    padding: 2px;
+    font-size: 0.9em;
+    border-radius: 50px;
+    background-color: var(--cor3);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Evelins';
+}
+
+#btn-hello button:hover{
+    color: var(--cor3);
+    border: solid 2px var(--cor3);
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+
+
+#hello  img {
+    position: absolute;
+    left: 44em;
+    top: 1em;
+    border-radius: 20px;
+    border: inset 5px var(--cor1);
+    box-shadow: 0px 5px 30px var(--cor5);
+    max-width: 250px;
+    min-width: 200px;
+
+}
+
+
+/* Tecnologias */
+#tec {
+    min-height: 10em;
+    background-color: rgba(5, 5, 5, 0.500);
+    color: var(--cor1);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -50px 100px var(--cor3);
+}
+
+#tec h1 {
+    font-size: 3em;
+    font-family: 'Evelins';
+    font-weight: normal;
+}
+
+#tec picture {
+    width: 100%;
+    min-height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tec img {
+    width: 6em;
+    transition: 0.5s;
+}
+
+#tec img:hover {
+    transform: scale(1.1);
+}
+
+/* Projetos */
+#container {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), var(--cor3));
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+#container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    filter: grayscale(50%);
+    transition: 0.5s;
+}
+#container img:hover{
+    filter: grayscale(20%);
+}
+
+.cards{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2em;
+
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color:var(--cor3);
+    color: var(--cor1);
+    border: double 5px var(--cor1);
+    box-shadow: 0px 5px 30px var(--cor1);
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    font-family: 'Evelins';
+}
+.p3{
+    width: 90%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: inset 5px var(--cor1);
+    font-size: 1.5em;
+    color: var(--cor5);
+}
+.p3 h1{
+    color: var(--cor3);
+    font-family: 'Evelins';
+}
+
+
+/* Cursos */
+
+#cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), var(--cor3));
+    background-attachment: fixed;
+}
+
+.btn-curso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    background-color: rgba(5, 5, 5, 0.500);
+    width: 100%;
+    height: 120px;
+}
+
+.btn-curso button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-curso img {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor3);
+    cursor: pointer;
+    filter: invert(100%) grayscale(100%);
+    transition: 0.5s;
+}
+
+.btn-curso img:hover {
+    transform: scale(1.1);
+    background-color: var(--cor2); 
+    filter: invert(0%) grayscale(0%);
+}
+
+.diplomas {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.diplomas img {
+    max-width: 100%;
+}
+
+.certificado {
+    width: 500px;
+    height: 300px;
+}
+
+/* Contato */
+#contato {
+    background-color:rgba(21, 56, 81, 0.71);
+    min-height: 6em;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+}
+
+
+#contato img {
+    max-width: 50px;
+    height: 50px;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+#contato img:hover{
+    transform: scale(1.1);
+}
+
+.redes-s {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    background-color: rgba(242, 242, 242, 0.5);
+    font-family: 'Evelins';
+}
+
+.rodape {
+    min-height: 3em;
+    background-color: var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: var(--cor1);
+    font-family: 'Evelins';
+}
