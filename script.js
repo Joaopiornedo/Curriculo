@@ -86,6 +86,40 @@ bt1.addEventListener("click", text1)
 bt2.addEventListener("click", text2)
 bt3.addEventListener("click", text3)
 
+
+// Projetos:
+
+//P1
+var p1 = document.querySelector('.p1')
+var p3 = document.querySelector('.p3')
+var h1_proj = p3.querySelector('h1')
+var p_proj = p3.querySelector('p')
+
+function p1_selecao(){
+    h1_proj.innerHTML='Page Animals '
+    p_proj.innerHTML='Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
+}
+function p1_out(){
+   h1_proj.innerHTML='Descrição'
+   p_proj.innerHTML= ''
+}
+p1.addEventListener('mouseover',p1_selecao)
+p1.addEventListener('mouseout',p1_out)
+
+//P2
+var p2 = document.querySelector('.p2')
+
+function p2_selecao(){
+    h1_proj.innerHTML='Page Poema '
+    p_proj.innerHTML='Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+}
+function p2_out(){
+   h1_proj.innerHTML='Descrição'
+   p_proj.innerHTML= ''
+}
+p2.addEventListener('mouseover',p2_selecao)
+p2.addEventListener('mouseout',p2_out)
+
 // Redes Sociais:
 
 var git = document.querySelector(".git")
