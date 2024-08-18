@@ -1,90 +1,50 @@
-// Animação :
-const myObserver = new IntersectionObserver((entrada) => {
-    entrada.forEach((entrou) => {
-        if (entrou.isIntersecting) {
-            if (entrou.target.classList.contains("anima1")) {
-                entrou.target.classList.add("ver1");
-            }
-        } else {
-            if (entrou.target.classList.contains("anima1")) {
-                entrou.target.classList.remove("ver1");
-            }
-        } if (entrou.isIntersecting) {
-            if (entrou.target.classList.contains("anima2")) {
-                entrou.target.classList.add("ver2");
-            }
-        } else {
-            if (entrou.target.classList.contains("anima2")) {
-                entrou.target.classList.remove("ver2");
-            }
-        }
-        if (entrou.isIntersecting) {
-            if (entrou.target.classList.contains("anima3")) {
-                entrou.target.classList.add("ver3");
-            }
-        } else {
-            if (entrou.target.classList.contains("anima3")) {
-                entrou.target.classList.remove("ver3");
-            }
-        }
+const ft = document.querySelector('.photo')
+const btn = [...document.querySelectorAll(".btn")];
+const article = document.querySelector('.artigo')
+const art= [...article.children]
+var h1 = art[0]
+var h4 = art[1]
+var p = art[2]
 
 
-    });
 
-});
+//Telas de 
+if (window.innerWidth <= 375) {
+    ft.style.width = '125px'
+    ft.style.top = '0.8em';
+    ft.style.left = '8em';
+    ft.style.opacity = '1'
+}
+if (window.innerHeight > 800) {
+    ft.style.top = '3em';
+    ft.style.left = '8em'
+    ft.style.opacity = '1'
+}
 
-const elements3 = document.querySelectorAll(".anima3");
-const elements2 = document.querySelectorAll(".anima2");
-const elements1 = document.querySelectorAll(".anima1");
-
-
-elements1.forEach((element) => {
-    myObserver.observe(element);
-});
-elements2.forEach((element) => {
-    myObserver.observe(element);
-});
-elements3.forEach((element) => {
-    myObserver.observe(element);
-});
-
-// Botões Article:
-var ft = document.querySelector('.photo')
-var titulo = document.querySelector(".title");
-var h4 = document.querySelector(".descri1");
-var text = document.querySelector(".descri2");
-var bt1 = document.querySelector(".btn1");
-var bt2 = document.querySelector(".btn2");
-var bt3 = document.querySelector(".btn3");
-
-function text1() {
-    titulo.innerHTML = "Hello World 👋🏼"
+// Botões Article Apresentação:
+const btn0 = btn[0]
+const btn1 = btn[1]
+const btn2 = btn[2]
+btn0.addEventListener('click', () => {
+    article.style.height='20em'
+    h1.innerHTML = "Hello World 👋🏼"
     h4.innerHTML = "Sou João Piornedo"
-    text.innerHTML = "Sou um desenvolvedor web com experiência em projetos de desenvolvimento de sites totalmente responsivos, utilizando tecnologias modernas para garantir a melhor experiência do usuário. Estou constantemente aprendendo e me atualizando sobre novas linguagens e frameworks. Tenho um forte foco em práticas de design responsivo, acessibilidade e otimização de performance, assegurando que os sites funcionem perfeitamente em diversos dispositivos e navegadores."
-    ft.style.top = '20em';
-    ft.style.left = '9em';
-}
-
-function text2() {
-    titulo.innerHTML = "Meus Objetivos"
+    p.innerHTML = "Sou um desenvolvedor web com experiência em projetos de desenvolvimento de sites totalmente responsivos, utilizando tecnologias modernas para garantir a melhor experiência do usuário. Estou constantemente aprendendo e me atualizando sobre novas linguagens e frameworks. Tenho um forte foco em práticas de design responsivo, acessibilidade e otimização de performance, assegurando que os sites funcionem perfeitamente em diversos dispositivos e navegadores."
+})
+//Botão 1 Objetivos
+btn1.addEventListener('click', () => {
+    article.style.height='20em'
+    h1.innerHTML = "Meus Objetivos"
     h4.innerHTML = ""
-    text.innerHTML = "Meu objetivo é me juntar a uma grande empresa onde eu possa me especializar e crescer profissionalmente. Com foco, determinação e uma facilidade notável para aprender, estou comprometido em me tornar um especialista em minha área. Acredito que trabalhar em um ambiente desafiador e inovador me permitirá aprimorar minhas habilidades e contribuir significativamente para projetos de alto impacto."
-    ft.style.top = '20em';
-    ft.style.left = '9em';
-}
-
-
-function text3() {
-    titulo.innerHTML = "Áreas de Estudo"
+    p.innerHTML = "Meu objetivo é me juntar a uma grande empresa onde eu possa me especializar e crescer profissionalmente. Com foco, determinação e uma facilidade notável para aprender, estou comprometido em me tornar um especialista em minha área. Acredito que trabalhar em um ambiente desafiador e inovador me permitirá aprimorar minhas habilidades e contribuir significativamente para projetos de alto impacto."
+})
+//Botão 1 Área de Estudos
+btn2.addEventListener('click', () => {
+    article.style.height='20em'
+    h1.innerHTML = "Áreas de Estudo"
     h4.innerHTML = ""
-    text.innerHTML = "Atualmente, estou estudando tecnologias como React, Node.js e JavaScript avançado. Estou sempre em busca de aprender e dominar novas tecnologias, mantendo-me atualizado e aprimorando minhas habilidades continuamente. Acredito que o aprendizado constante é fundamental para o crescimento profissional e para estar à frente no mercado de tecnologia."
-    ft.style.top = '20em';
-    ft.style.left = '9em';
-}
-
-bt1.addEventListener("click", text1)
-bt2.addEventListener("click", text2)
-bt3.addEventListener("click", text3)
+    p.innerHTML = "Atualmente, estou estudando tecnologias como React, Node.js e JavaScript avançado. Estou sempre em busca de aprender e dominar novas tecnologias, mantendo-me atualizado e aprimorando minhas habilidades continuamente. Acredito que o aprendizado constante é fundamental para o crescimento profissional e para estar à frente no mercado de tecnologia."
+})
 
 
 // // Projetos:
@@ -202,7 +162,7 @@ proj2.addEventListener('click', () => {
 // mouse out proj[2]
 proj2.addEventListener('mouseout', () => {
     if (proj2.classList.contains('proj_selec')) {
-        proj2.style.backgroundPosition= 'center left 20%'
+        proj2.style.backgroundPosition = 'center left 20%'
     }
     else {
         proj2.style.backgroundPosition = 'center left 25%'
@@ -231,6 +191,7 @@ proj3.addEventListener('click', () => {
         proj3.style.backgroundPosition = 'left center'
         proj_text.firstElementChild.innerHTML = 'Page Cyber Punk'
         proj_text.lastElementChild.innerHTML = ''
+        
     }
     else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
@@ -249,7 +210,26 @@ proj3.addEventListener('mouseout', () => {
     }
 })
 
-//Selecionados:
+//Diplomas / Certificados:
+const diplomas = document.querySelector('.diplomas')
+const certificados = [...diplomas.children]
+const cert0 = certificados[0]
+const cert1 = certificados[1]
+const cert2 = certificados[2]
+
+// Certificado 0
+cert0.style.backgroundImage= 'url(./imgs/certificado1.PNG)'
+cert0.style.backgroundSize='cover'
+cert0.style.backgroundPosition='center center'
+// Certificado 1
+cert1.style.backgroundImage= 'url(./imgs/certificado2.PNG)'
+cert1.style.backgroundSize='cover'
+cert1.style.backgroundPosition='center center'
+// Certificado 2
+cert2.style.backgroundImage= 'url(./imgs/certificado3.PNG)'
+cert2.style.backgroundSize='cover'
+cert2.style.backgroundPosition='center center'
+
 
 
 

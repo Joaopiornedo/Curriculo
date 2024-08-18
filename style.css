@@ -71,17 +71,14 @@ header nav {
     padding: 2px;
     border-radius: 20px;
     border: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     cursor: pointer;
     background-color: transparent;
     transition: 0.5s;
     color: var(--cor1);
     font-family: 'Evelins';
     font-weight: normal;
-
-
 }
-
 .btn-nav:hover {
     transform: scale(1.1);
     color: white;
@@ -97,60 +94,68 @@ section {
 }
 
 /* Boco 1 - Apresentação */
-
 #hello {
-    position: relative;
+    padding: 1em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5em 0em 0em 0em;
+    gap: 1em;
 
 }
+.photo{
+    max-width: 200px;
+    border-radius: 20px;
+    border: inset 5px var(--cor1);
+    box-shadow: 0px 5px 30px var(--cor5);
+}
+
 
 .artigo {
     background-color: rgba(255, 255, 255, 0.7);
     border: inset 5px var(--cor1);
-    width: 50%;
+    width: 40%;
+    height: 10em;
+    max-height: 90%;
+    max-width: 90%;
     display: flex;
-    padding: 2em;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 1em;
+    gap: 0.7em;
     color: black;
     border-radius: 20px;
-    gap: 2em;
-    font-size: 1.3em;
-    line-height: 1.5em;
+    font-size: 1.5em;
+    line-height: 1em;
     box-shadow: 0px 5px 30px var(--cor5);
-    font-family: Arial, Helvetica, sans-serif;
+   
 }
-
-.artigo h1 {
-    font-size: 2.5em;
-    font-family: 'Evelins';
-    font-weight: normal;
-}
-
-.artigo h4 {
+.artigo h1{
     font-size: 2em;
     font-family: 'Evelins';
-    font-weight: normal;
+    font-weight: 100;
 }
-
+.artigo h4{
+    font-size: 1.5em;
+    font-family: 'Evelins';
+    font-weight: 100;
+}
 
 #btn-hello {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 50px;
+    height: 20%;
     width: 100%;
 }
 
-#btn-hello button {
+.btn {
     border: none;
-    height: 2em;
-    width: 9em;
+    height: 1.6em;
+    width: 8em;
     padding: 2px;
-    font-size: 0.9em; 
+    font-size: 0.7em; 
     border-radius: 50px;
     background-color: var(--cor3);
     color: white;
@@ -159,35 +164,21 @@ section {
     font-family: 'Evelins';
 }
 
-#btn-hello button:hover {
+.btn:hover {
     color: var(--cor3);
     border: solid 2px var(--cor3);
     background-color: transparent;
     transform: scale(1.1);
 }
 
-
-
-#hello img {
-    position: absolute;
-    left: 44em;
-    top: 1em;
-    border-radius: 20px;
-    border: inset 5px var(--cor1);
-    box-shadow: 0px 5px 30px var(--cor5);
-    max-width: 250px;
-    min-width: 200px;
-
-}
-
-
 /* Tecnologias */
 #tec {
-    min-height: 10em;
+    height: 10em;
     background-color: rgba(5, 5, 5, 0.500);
     color: var(--cor1);
     display: flex;
     align-items: center;
+    justify-content: space-around;
     box-shadow: 0px -50px 100px var(--cor3);
 }
 
@@ -197,42 +188,21 @@ section {
     font-weight: normal;
 }
 
-#tec picture {
-    width: 100%;
-    min-height: 8em;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 #tec img {
     width: 6em;
-    transition: 0.5s;
 }
 
-#tec img:hover {
-    transform: scale(1.1);
-}
 
 /* Projetos */
-#container {
+#projetos {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), var(--cor3));
     background-attachment: fixed;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-/* Cards Projetos */
-.cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.1em;
+    gap: 1em;
     padding: 2em;
 }
-
 .projeto {
     background-color:var(--cor3);
     width: 200px;
@@ -254,10 +224,11 @@ section {
     justify-content: center;
     gap: 2em;
     padding: 1em;
-    width: 90%;
+    width: 20em;
     height: 600px;
     background-color: rgba(255, 255, 255, 0.7);
     border: inset 5px var(--cor1);
+    border-radius: 20px;
     font-size: 1.3em;
     color: var(--cor5);
     font-family: Arial, Helvetica, sans-serif;
@@ -273,11 +244,8 @@ section {
 
 /* Cursos */
 #cursos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), var(--cor3));
     background-attachment: fixed;
 }
@@ -288,13 +256,6 @@ section {
     justify-content: center;
     gap: 5em;
     background-color: rgba(5, 5, 5, 0.500);
-    width: 100%;
-    height: 120px;
-}
-
-.btn-curso button {
-    background-color: transparent;
-    border: none;
 }
 
 .btn-curso img {
@@ -315,20 +276,15 @@ section {
 }
 
 .diplomas {
-    width: 100%;
-    height: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-.diplomas img {
-    max-width: 100%;
+    justify-content: space-around;
 }
 
 .certificado {
-    width: 500px;
-    height: 300px;
+    width: 425px;
+    height: 300px; 
+    box-shadow: 0px 5px 30px var(--cor3);
 }
 
 /* Contato */
