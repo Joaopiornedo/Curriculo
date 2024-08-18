@@ -112,11 +112,11 @@ proj0.addEventListener('click', () => {
     proj2.classList.remove('proj_selec')
     proj3.classList.remove('proj_selec')
     proj0.classList.toggle('proj_selec')
-    if(proj0.classList.contains('proj_selec')){
+    if (proj0.classList.contains('proj_selec')) {
         proj_text.firstElementChild.innerHTML = 'Page Animals'
-    proj_text.lastElementChild.innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
+        proj_text.lastElementChild.innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
     }
-    else{
+    else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
         proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
         proj0.style.width = '200px'
@@ -135,13 +135,13 @@ proj0.addEventListener('mouseout', () => {
 
 //Proj[1] Poema
 proj1.style.backgroundImage = "url('./imgs/site2.PNG')";
-proj1.style.backgroundPosition= 'right'
-proj1.style.backgroundSize='cover'
+proj1.style.backgroundPosition = 'right'
+proj1.style.backgroundSize = 'cover'
 
 proj1.addEventListener('mouseover', () => {
     proj1.style.backgroundImage = "url('./imgs/site2.PNG')";
     proj1.style.width = '300px'
-    proj1.style.backgroundPosition= 'left center'
+    proj1.style.backgroundPosition = 'left center'
     proj1.style.transition = ' 1s'
 })
 //selecionar proj[1]
@@ -150,12 +150,12 @@ proj1.addEventListener('click', () => {
     proj2.classList.remove('proj_selec')
     proj3.classList.remove('proj_selec')
     proj1.classList.toggle('proj_selec')
-    if(proj1.classList.contains('proj_selec')){
-    proj1.style.backgroundPosition= 'left center'
-    proj_text.firstElementChild.innerHTML = 'Page Poema'
-    proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+    if (proj1.classList.contains('proj_selec')) {
+        proj1.style.backgroundPosition = 'left center'
+        proj_text.firstElementChild.innerHTML = 'Page Poema'
+        proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
     }
-    else{
+    else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
         proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
         proj1.style.width = '200px'
@@ -164,21 +164,22 @@ proj1.addEventListener('click', () => {
 // mouse out proj[1]
 proj1.addEventListener('mouseout', () => {
     if (proj1.classList.contains('proj_selec')) {
-        proj1.style.backgroundPosition= 'left center'
+        proj1.style.backgroundPosition = 'left center'
     }
     else {
-        proj1.style.backgroundPosition= 'right'
+        proj1.style.backgroundPosition = 'right'
         proj1.style.width = '200px'
     }
 })
-//Proj[2] 
-proj2.style.backgroundImage = "url('./imgs/site1.PNG')";
-proj2.style.backgroundPosition= 'right'
-proj2.style.backgroundSize='cover'
+//////////////////////////////////////////////////////////////////////////////
+//Proj[2] Games
+proj2.style.backgroundImage = "url('./imgs/site4.PNG')";
+proj2.style.backgroundPosition = 'center left 25%'
+proj2.style.backgroundSize = 'cover'
 
 proj2.addEventListener('mouseover', () => {
     proj2.style.width = '300px'
-    proj2.style.backgroundPosition= 'left center'
+    proj2.style.backgroundPosition = 'center left 20%'
     proj2.style.transition = ' 1s'
 })
 //selecionar proj[2]
@@ -187,12 +188,12 @@ proj2.addEventListener('click', () => {
     proj1.classList.remove('proj_selec')
     proj3.classList.remove('proj_selec')
     proj2.classList.toggle('proj_selec')
-    if(proj2.classList.contains('proj_selec')){
-    proj2.style.backgroundPosition= 'left center'
-    proj_text.firstElementChild.innerHTML = 'Page Poema'
-    proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+    if (proj2.classList.contains('proj_selec')) {
+        proj2.style.backgroundPosition = 'center left 20%'
+        proj_text.firstElementChild.innerHTML = 'Page Games'
+        proj_text.lastElementChild.innerHTML = ''
     }
-    else{
+    else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
         proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
         proj2.style.width = '200px'
@@ -201,23 +202,23 @@ proj2.addEventListener('click', () => {
 // mouse out proj[2]
 proj2.addEventListener('mouseout', () => {
     if (proj2.classList.contains('proj_selec')) {
-        proj2.style.backgroundPosition= 'left center'
+        proj2.style.backgroundPosition= 'center left 20%'
     }
     else {
-        proj2.style.backgroundPosition= 'right'
+        proj2.style.backgroundPosition = 'center left 25%'
         proj2.style.width = '200px'
     }
 })
 
-//Proj[3]
-proj3.style.backgroundImage = "url('./imgs/site2.PNG')";
-proj3.style.backgroundPosition= 'right'
-proj3.style.backgroundSize='cover'
+//Proj[3] Cyber Punk
+proj3.style.backgroundImage = "url('./imgs/site3.PNG')";
+proj3.style.backgroundPosition = 'center left 10% '
+proj3.style.backgroundSize = 'cover'
 
 proj3.addEventListener('mouseover', () => {
-    proj3.style.backgroundImage = "url('./imgs/site2.PNG')";
+    proj3.style.backgroundImage = "url('./imgs/site3.PNG')";
     proj3.style.width = '300px'
-    proj3.style.backgroundPosition= 'left center'
+    proj3.style.backgroundPosition = 'left center'
     proj3.style.transition = ' 1s'
 })
 //selecionar proj[3]
@@ -226,12 +227,12 @@ proj3.addEventListener('click', () => {
     proj1.classList.remove('proj_selec')
     proj2.classList.remove('proj_selec')
     proj3.classList.toggle('proj_selec')
-    if(proj3.classList.contains('proj_selec')){
-    proj3.style.backgroundPosition= 'left center'
-    proj_text.firstElementChild.innerHTML = 'Page Poema'
-    proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+    if (proj3.classList.contains('proj_selec')) {
+        proj3.style.backgroundPosition = 'left center'
+        proj_text.firstElementChild.innerHTML = 'Page Cyber Punk'
+        proj_text.lastElementChild.innerHTML = ''
     }
-    else{
+    else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
         proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
         proj3.style.width = '200px'
@@ -240,10 +241,10 @@ proj3.addEventListener('click', () => {
 // mouse out proj[3]
 proj3.addEventListener('mouseout', () => {
     if (proj3.classList.contains('proj_selec')) {
-        proj3.style.backgroundPosition= 'left center'
+        proj3.style.backgroundPosition = 'center left  '
     }
     else {
-        proj3.style.backgroundPosition= 'right'
+        proj3.style.backgroundPosition = 'center left 10% '
         proj3.style.width = '200px'
     }
 })
