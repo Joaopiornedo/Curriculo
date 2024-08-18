@@ -1,0 +1,354 @@
+@media (max-width:370px) {
+
+    /* Header */
+    .btn-nav {
+        font-size: 1em;
+    }
+
+    /* Artigo */
+    .artigo {
+        width: 90%;
+        padding: 1em;
+        font-size: 0.8em;
+    }
+
+    .artigo h1 {
+        font-size: 1.8em;
+    }
+
+    .artigo h4 {
+        font-size: 1.2em;
+    }
+
+    #btn-hello {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #btn-hello button {
+        height: 80%;
+        font-size: 0.7em;
+    }
+
+    /* Photo */
+    #hello img {
+        max-width: 150px;
+        min-width: 100px;
+        left: 7em;
+        top: 3em;
+    }
+
+    /* Cartoon */
+    .me {
+        max-width: 150px;
+        left: 16em;
+        top: 35em;
+    }
+
+    /* Tecnologias */
+    #tec h1 {
+        font-size: 1.2em;
+
+    }
+
+    #tec img {
+        width: 2em;
+        transition: 0.5s;
+    }
+
+    /* Projetos */
+    #container {
+        grid-template-columns: none;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+   
+    }
+    .cards{
+        background-color:orange ;
+        align-items: start;
+
+        padding: 1em;
+        min-height: 300px;
+
+    }
+
+    .projeto {
+        width: 80px;
+        height: 200px;
+    }
+    .proj_text{
+        height: 90%;
+        font-size: 1em;
+    }
+    /* Cursos */
+    .btn-curso {
+        height: 80px;
+    }
+    .btn-curso img {
+        width: 30px;
+        padding: 5px;
+        
+    }
+    .diplomas{
+        flex-direction: column;
+        height: 400px;
+    }
+    .certificado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+    }
+    /* Contato */
+    #contato{
+        font-size: 15px;
+    }
+    #contato img {
+        max-width: 30px;
+        height: 30px;
+    }
+    .redes-s{
+        gap: 1em;
+    }
+    .rodape{
+        font-size: 1.2em;
+    }
+}
+@media (min-width:371px) and (max-width:430px) {
+
+    /* Header */
+    .btn-nav {
+        font-size: 1em;
+    }
+
+    /* Artigo */
+    .artigo {
+        width: 90%;
+        padding: 1em;
+        font-size: 0.8em;
+    }
+
+    .artigo h1 {
+        font-size: 1.8em;
+    }
+
+    .artigo h4 {
+        font-size: 1.2em;
+    }
+
+    #btn-hello {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #btn-hello button {
+        height: 80%;
+        font-size: 0.7em;
+    }
+
+    /* Photo */
+    #hello img {
+        max-width: 150px;
+        min-width: 100px;
+        left: 7em;
+        top: 3em;
+    }
+
+    /* Cartoon */
+    .me {
+        max-width: 150px;
+        left: 16em;
+        top: 35em;
+    }
+
+    /* Tecnologias */
+    #tec h1 {
+        font-size: 1.2em;
+
+    }
+
+    #tec img {
+        width: 2em;
+        transition: 0.5s;
+    }
+
+    /* Projetos */
+    #container {
+        grid-template-columns: none;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+   
+    }
+    .cards{
+        background-color:orange ;
+        align-items: start;
+
+        padding: 1em;
+        min-height: 300px;
+
+    }
+
+    .projeto {
+        width: 80px;
+        height: 200px;
+    }
+    .proj_text{
+        height: 90%;
+        font-size: 1em;
+    }
+    /* Cursos */
+    .btn-curso {
+        height: 80px;
+    }
+    .btn-curso img {
+        width: 30px;
+        padding: 5px;
+        
+    }
+    .diplomas{
+        flex-direction: column;
+        height: 400px;
+    }
+    .certificado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+    }
+    /* Contato */
+    #contato{
+        font-size: 15px;
+    }
+    #contato img {
+        max-width: 30px;
+        height: 30px;
+    }
+    .redes-s{
+        gap: 1em;
+    }
+    .rodape{
+        font-size: 1.2em;
+    }
+}
+@media (min-width:431px) and (max-width:530px) {
+
+    /* Header */
+    .btn-nav {
+        font-size: 1em;
+    }
+
+    /* Artigo */
+    .artigo {
+        width: 90%;
+        padding: 1em;
+        font-size: 0.8em;
+    }
+
+    .artigo h1 {
+        font-size: 1.8em;
+    }
+
+    .artigo h4 {
+        font-size: 1.2em;
+    }
+
+    #btn-hello {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #btn-hello button {
+        height: 80%;
+        font-size: 0.7em;
+    }
+
+    /* Photo */
+    #hello img {
+        max-width: 150px;
+        min-width: 100px;
+        left: 7em;
+        top: 3em;
+    }
+
+    /* Cartoon */
+    .me {
+        max-width: 150px;
+        left: 16em;
+        top: 35em;
+    }
+
+    /* Tecnologias */
+    #tec h1 {
+        font-size: 1.2em;
+
+    }
+
+    #tec img {
+        width: 2em;
+        transition: 0.5s;
+    }
+
+    /* Projetos */
+    #container {
+        grid-template-columns: none;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+   
+    }
+    .cards{
+        background-color:orange ;
+        align-items: start;
+
+        padding: 1em;
+        min-height: 300px;
+
+    }
+
+    .projeto {
+        width: 80px;
+        height: 200px;
+    }
+    .proj_text{
+        height: 90%;
+        font-size: 1em;
+    }
+    /* Cursos */
+    .btn-curso {
+        height: 80px;
+    }
+    .btn-curso img {
+        width: 30px;
+        padding: 5px;
+        
+    }
+    .diplomas{
+        flex-direction: column;
+        height: 400px;
+    }
+    .certificado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+    }
+    /* Contato */
+    #contato{
+        font-size: 15px;
+    }
+    #contato img {
+        max-width: 30px;
+        height: 30px;
+    }
+    .redes-s{
+        gap: 1em;
+    }
+    .rodape{
+        font-size: 1.2em;
+    }
+}
