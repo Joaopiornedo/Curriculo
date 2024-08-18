@@ -87,105 +87,210 @@ bt2.addEventListener("click", text2)
 bt3.addEventListener("click", text3)
 
 
-// Projetos:
+// // Projetos:
+const proj_text = document.querySelector('.proj_text')
+const proj = [...document.querySelectorAll('.projeto')]
+const proj0 = proj[0]
+const proj1 = proj[1]
+const proj2 = proj[2]
+const proj3 = proj[3]
+const proj4 = proj[4]
 
-//P1
-var p1 = document.querySelector('.p1')
-var p3 = document.querySelector('.p3')
-var h1_proj = p3.querySelector('h1')
-var p_proj = p3.querySelector('p')
 
-function p1_selecao() {
-    h1_proj.innerHTML = 'Page Animals '
-    p_proj.innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
-}
-function p1_out() {
-    h1_proj.innerHTML = 'Descrição'
-    p_proj.innerHTML = ''
-}
-p1.addEventListener('mouseover', p1_selecao)
-p1.addEventListener('mouseout', p1_out)
+//Proj[0] Animals
+proj0.style.backgroundImage = "url('./imgs/site1.PNG')";
+proj0.style.backgroundPosition = 'left 13%  top 25%'
+proj0.addEventListener('mouseover', () => {
+    proj0.style.backgroundImage = "url('./imgs/site1.PNG')";
+    proj0.style.backgroundPosition = 'left  top 35%'
+    proj0.style.width = '300px'
+    proj0.style.transition = ' 1s'
+})
+//selecionar proj[0]
+proj0.addEventListener('click', () => {
+    proj1.classList.remove('proj_selec')
+    proj2.classList.remove('proj_selec')
+    proj3.classList.remove('proj_selec')
+    proj0.classList.toggle('proj_selec')
+    if(proj0.classList.contains('proj_selec')){
+        proj_text.firstElementChild.innerHTML = 'Page Animals'
+    proj_text.lastElementChild.innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
+    }
+    else{
+        proj_text.firstElementChild.innerHTML = 'Descrição'
+        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
+        proj0.style.width = '200px'
+    }
+})
+// mouse out proj[0]
+proj0.addEventListener('mouseout', () => {
+    if (proj0.classList.contains('proj_selec')) {
+        proj0.style.backgroundPosition = 'left  top 35%'
+    }
+    else {
+        proj0.style.backgroundPosition = 'left 13%  top 25%'
+        proj0.style.width = '200px'
+    }
+})
 
-//P2
-var p2 = document.querySelector('.p2')
+//Proj[1] Poema
+proj1.style.backgroundImage = "url('./imgs/site2.PNG')";
+proj1.style.backgroundPosition= 'right'
+proj1.style.backgroundSize='cover'
 
-function p2_selecao() {
-    h1_proj.innerHTML = 'Page Poema '
-    p_proj.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
-}
-function p2_out() {
-    h1_proj.innerHTML = 'Descrição'
-    p_proj.innerHTML = ''
-}
-p2.addEventListener('mouseover', p2_selecao)
-p2.addEventListener('mouseout', p2_out)
+proj1.addEventListener('mouseover', () => {
+    proj1.style.backgroundImage = "url('./imgs/site2.PNG')";
+    proj1.style.width = '300px'
+    proj1.style.backgroundPosition= 'left center'
+    proj1.style.transition = ' 1s'
+})
+//selecionar proj[1]
+proj1.addEventListener('click', () => {
+    proj0.classList.remove('proj_selec')
+    proj2.classList.remove('proj_selec')
+    proj3.classList.remove('proj_selec')
+    proj1.classList.toggle('proj_selec')
+    if(proj1.classList.contains('proj_selec')){
+    proj1.style.backgroundPosition= 'left center'
+    proj_text.firstElementChild.innerHTML = 'Page Poema'
+    proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+    }
+    else{
+        proj_text.firstElementChild.innerHTML = 'Descrição'
+        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
+        proj1.style.width = '200px'
+    }
+})
+// mouse out proj[1]
+proj1.addEventListener('mouseout', () => {
+    if (proj1.classList.contains('proj_selec')) {
+        proj1.style.backgroundPosition= 'left center'
+    }
+    else {
+        proj1.style.backgroundPosition= 'right'
+        proj1.style.width = '200px'
+    }
+})
+//Proj[2] 
+proj2.style.backgroundImage = "url('./imgs/site1.PNG')";
+proj2.style.backgroundPosition= 'right'
+proj2.style.backgroundSize='cover'
+
+proj2.addEventListener('mouseover', () => {
+    proj2.style.width = '300px'
+    proj2.style.backgroundPosition= 'left center'
+    proj2.style.transition = ' 1s'
+})
+//selecionar proj[2]
+proj2.addEventListener('click', () => {
+    proj0.classList.remove('proj_selec')
+    proj1.classList.remove('proj_selec')
+    proj3.classList.remove('proj_selec')
+    proj2.classList.toggle('proj_selec')
+    if(proj2.classList.contains('proj_selec')){
+    proj2.style.backgroundPosition= 'left center'
+    proj_text.firstElementChild.innerHTML = 'Page Poema'
+    proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+    }
+    else{
+        proj_text.firstElementChild.innerHTML = 'Descrição'
+        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
+        proj2.style.width = '200px'
+    }
+})
+// mouse out proj[2]
+proj2.addEventListener('mouseout', () => {
+    if (proj2.classList.contains('proj_selec')) {
+        proj2.style.backgroundPosition= 'left center'
+    }
+    else {
+        proj2.style.backgroundPosition= 'right'
+        proj2.style.width = '200px'
+    }
+})
+
+//Proj[3]
+proj3.style.backgroundImage = "url('./imgs/site2.PNG')";
+proj3.style.backgroundPosition= 'right'
+proj3.style.backgroundSize='cover'
+
+proj3.addEventListener('mouseover', () => {
+    proj3.style.backgroundImage = "url('./imgs/site2.PNG')";
+    proj3.style.width = '300px'
+    proj3.style.backgroundPosition= 'left center'
+    proj3.style.transition = ' 1s'
+})
+//selecionar proj[3]
+proj3.addEventListener('click', () => {
+    proj0.classList.remove('proj_selec')
+    proj1.classList.remove('proj_selec')
+    proj2.classList.remove('proj_selec')
+    proj3.classList.toggle('proj_selec')
+    if(proj3.classList.contains('proj_selec')){
+    proj3.style.backgroundPosition= 'left center'
+    proj_text.firstElementChild.innerHTML = 'Page Poema'
+    proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+    }
+    else{
+        proj_text.firstElementChild.innerHTML = 'Descrição'
+        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
+        proj3.style.width = '200px'
+    }
+})
+// mouse out proj[3]
+proj3.addEventListener('mouseout', () => {
+    if (proj3.classList.contains('proj_selec')) {
+        proj3.style.backgroundPosition= 'left center'
+    }
+    else {
+        proj3.style.backgroundPosition= 'right'
+        proj3.style.width = '200px'
+    }
+})
+
+//Selecionados:
+
+
 
 // Redes Sociais:
+const rd = [...document.querySelectorAll('.rs')]
+//GitHub:
+rd[0].addEventListener('mouseover', () => {
+    rd[0].src = './imgs/img/github-2.png'
+    rd[0].addEventListener('mouseout', () => {
+        rd[0].src = './imgs/img/github.png'
+    })
 
-var git = document.querySelector(".git")
-var link = document.querySelector(".link")
-var what = document.querySelector(".what")
-var insta = document.querySelector(".insta")
-var gmail = document.querySelector(".gmail")
+})
+//Linkedin:
+rd[1].addEventListener('mouseover', () => {
+    rd[1].src = './imgs/img/linkedin-2.png'
+    rd[1].addEventListener('mouseout', () => {
+        rd[1].src = './imgs/img/linkedin.png'
+    })
 
-// Github
-function git_img() {
-    //alert("passou")
-    git.src = './imgs/img/github-2.png'
-}
-function git_reset() {
-    git.src = "./imgs/img/github.png"
-}
+})
+//Whats:
+rd[2].addEventListener('mouseover', () => {
+    rd[2].src = './imgs/img/whatsapp-2.png'
+    rd[2].addEventListener('mouseout', () => {
+        rd[2].src = './imgs/img/whatsapp.png'
+    })
 
-git.addEventListener("mouseout", git_reset)
-git.addEventListener("mouseover", git_img)
+})
+//Insta:
+rd[3].addEventListener('mouseover', () => {
+    rd[3].src = './imgs/img/instagram-2.png'
+    rd[3].addEventListener('mouseout', () => {
+        rd[3].src = './imgs/img/instagram.png'
+    })
 
-//Linkedin
+})
+//Gmail:
+rd[4].addEventListener('mouseover', () => {
+    rd[4].src = './imgs/img/gmail-2.png'
+    rd[4].addEventListener('mouseout', () => {
+        rd[4].src = './imgs/img/gmail.png'
+    })
 
-function link_img() {
-    //alert("passou")
-    link.src = './imgs/img/linkedin-2.png'
-}
-function link_reset() {
-    link.src = "./imgs/img/linkedin.png"
-}
-
-link.addEventListener("mouseout", link_reset)
-link.addEventListener("mouseover", link_img)
-
-// What
-
-function what_img() {
-    //alert("passou")
-    what.src = './imgs/img/whatsapp-2.png'
-}
-function what_reset() {
-    what.src = "./imgs/img/whatsapp.png"
-}
-what.addEventListener("mouseout", what_reset)
-what.addEventListener("mouseover", what_img)
-
-// Instagram
-
-function insta_img() {
-    //alert("passou")
-    insta.src = './imgs/img/instagram-2.png'
-}
-function insta_reset() {
-    insta.src = "./imgs/img/instagram.png"
-}
-insta.addEventListener("mouseout", insta_reset)
-insta.addEventListener("mouseover", insta_img)
-
-// Gmail
-
-function gmail_img() {
-    //alert("passou")
-    gmail.src = './imgs/img/gmail-2.png'
-}
-function gmail_reset() {
-    gmail.src = "./imgs/img/gmail.png"
-}
-gmail.addEventListener("mouseout", gmail_reset)
-gmail.addEventListener("mouseover", gmail_img)
-
+})

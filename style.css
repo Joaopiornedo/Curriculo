@@ -237,53 +237,31 @@ section {
     filter: grayscale(20%);
 }
 
-/* Botões Projetos */
-.btn-projetos {
-    position: absolute;
-    display: flex;
-    gap: 3em;
-    top: 6em;
-    left: 27.5em;
-}
-
-.btn-projetos button {
-    background-color: transparent;
-    border: none;
-}
-
-.btn-projetos img {
-    width: 50px;
-    padding: 5px;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--cor3);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn-projetos img:hover {
-    transform: scale(1.1);
-    background-color: var(--cor2);
-    filter: invert(0%) grayscale(0%);
-}
-
 /* Cards Projetos */
 .cards {
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 0.1em;
+    padding: 2em;
 }
 
-.cards img {
-    max-width: 400px;
-    height: 500px;
+.projeto {
+    background-color:var(--cor3);
+    min-width: 200px;
+    min-height: 400px;
     border-radius: 20px;
+    cursor: pointer;
+}
+.proj_selec{
+    width: 300px !important;
+    border: solid 3px var(--cor2) !important;
+    box-shadow: 0px 5px 20px var(--cor3);
+    transition: 0.2s !important;
 }
 
-
-.p3 {
+.proj_text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,11 +278,12 @@ section {
     line-height: 1.5em;
 }
 
-.p3 h1 {
+.proj_text h1  {
     font-size: 2em;
     color: var(--cor3);
     font-family: 'Evelins';
 }
+
 
 /* Cursos */
 #cursos {
