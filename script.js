@@ -57,6 +57,7 @@ const proj3 = proj[3]
 const proj4 = proj[4]
 
 
+
 //Proj[0] Animals
 proj0.style.backgroundImage = "url('./imgs/site1.PNG')";
 proj0.style.backgroundPosition = 'left 13%  top 25%'
@@ -80,6 +81,7 @@ proj0.addEventListener('click', () => {
         proj_text.firstElementChild.innerHTML = 'Descrição'
         proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
         proj0.style.width = '200px'
+        
     }
 })
 // mouse out proj[0]
