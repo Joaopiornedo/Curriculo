@@ -55,6 +55,14 @@ const proj1 = proj[1]
 const proj2 = proj[2]
 const proj3 = proj[3]
 const proj4 = proj[4]
+const novoEl =document.createElement('a')
+novoEl.setAttribute('class','vermais')
+novoEl.target='blank'
+novoEl.style.display='flex'
+novoEl.style.alignContent='certer'
+novoEl.style.justifyContent='center'
+novoEl.innerHTML='Veja Mais'
+
 
 
 
@@ -69,13 +77,15 @@ proj0.addEventListener('mouseover', () => {
 })
 //selecionar proj[0]
 proj0.addEventListener('click', () => {
+    novoEl.setAttribute('href','https://joaopiornedo.github.io/Animals/')
+    proj_text.appendChild(novoEl)
     proj1.classList.remove('proj_selec')
     proj2.classList.remove('proj_selec')
     proj3.classList.remove('proj_selec')
     proj0.classList.toggle('proj_selec')
     if (proj0.classList.contains('proj_selec')) {
-        proj_text.firstElementChild.innerHTML = 'Page Animals'
-        proj_text.lastElementChild.innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
+        proj_text.children[0].innerHTML = 'Page Animals'
+        proj_text.children[1].innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
     }
     else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
@@ -108,14 +118,16 @@ proj1.addEventListener('mouseover', () => {
 })
 //selecionar proj[1]
 proj1.addEventListener('click', () => {
+    novoEl.setAttribute('href','https://joaopiornedo.github.io/projeto-cordel-curso/')
+    proj_text.appendChild(novoEl)
     proj0.classList.remove('proj_selec')
     proj2.classList.remove('proj_selec')
     proj3.classList.remove('proj_selec')
     proj1.classList.toggle('proj_selec')
     if (proj1.classList.contains('proj_selec')) {
         proj1.style.backgroundPosition = 'left center'
-        proj_text.firstElementChild.innerHTML = 'Page Poema'
-        proj_text.lastElementChild.innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
+        proj_text.children[0].innerHTML = 'Page Poema'
+        proj_text.children[1].innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
     }
     else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
@@ -146,14 +158,16 @@ proj2.addEventListener('mouseover', () => {
 })
 //selecionar proj[2]
 proj2.addEventListener('click', () => {
+    novoEl.setAttribute('href','https://joaopiornedo.github.io/page-games/')
+    proj_text.appendChild(novoEl)
     proj0.classList.remove('proj_selec')
     proj1.classList.remove('proj_selec')
     proj3.classList.remove('proj_selec')
     proj2.classList.toggle('proj_selec')
     if (proj2.classList.contains('proj_selec')) {
         proj2.style.backgroundPosition = 'center left 20%'
-        proj_text.firstElementChild.innerHTML = 'Page Games'
-        proj_text.lastElementChild.innerHTML = ''
+        proj_text.children[0].innerHTML = 'Page Games'
+        proj_text.children[1].innerHTML = ''
     }
     else {
         proj_text.firstElementChild.innerHTML = 'Descrição'
@@ -185,14 +199,16 @@ proj3.addEventListener('mouseover', () => {
 })
 //selecionar proj[3]
 proj3.addEventListener('click', () => {
+    novoEl.setAttribute('href','https://joaopiornedo.github.io/landing_page_cyberpunk/')
+    proj_text.appendChild(novoEl)
     proj0.classList.remove('proj_selec')
     proj1.classList.remove('proj_selec')
     proj2.classList.remove('proj_selec')
     proj3.classList.toggle('proj_selec')
     if (proj3.classList.contains('proj_selec')) {
         proj3.style.backgroundPosition = 'left center'
-        proj_text.firstElementChild.innerHTML = 'Page Cyber Punk'
-        proj_text.lastElementChild.innerHTML = ''
+        proj_text.children[0].innerHTML = 'Page Cyber Punk'
+        proj_text.children[1].innerHTML = ''
         
     }
     else {

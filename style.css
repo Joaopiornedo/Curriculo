@@ -241,7 +241,25 @@ section {
     font-family: 'Evelins';
 }
 .vermais{
-    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 1.6em;
+    width: 8em;
+    font-size: 0.9em; 
+    border-radius: 50px;
+    background-color: var(--cor3);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Evelins';
+}
+.vermais:hover{
+    color: var(--cor3);
+    border: solid 2px var(--cor3);
+    background-color: transparent;
+    transform: scale(1.1);
 }
 
 
