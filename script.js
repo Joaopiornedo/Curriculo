@@ -88,9 +88,10 @@ proj0.addEventListener('click', () => {
         proj_text.children[1].innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
     }
     else {
-        proj_text.firstElementChild.innerHTML = 'Descrição'
-        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
+        proj_text.children[0].innerHTML = 'Descrição'
+        proj_text.children[1].innerHTML = 'Selecione um projeto'
         proj0.style.width = '200px'
+        proj_text.removeChild(novoEl)
         
     }
 })
@@ -130,9 +131,11 @@ proj1.addEventListener('click', () => {
         proj_text.children[1].innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
     }
     else {
-        proj_text.firstElementChild.innerHTML = 'Descrição'
-        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
-        proj1.style.width = '200px'
+        proj_text.children[0].innerHTML = 'Descrição'
+        proj_text.children[1].innerHTML = 'Selecione um projeto'
+        proj0.style.width = '200px'
+        proj_text.removeChild(novoEl)
+
     }
 })
 // mouse out proj[1]
@@ -170,9 +173,10 @@ proj2.addEventListener('click', () => {
         proj_text.children[1].innerHTML = ''
     }
     else {
-        proj_text.firstElementChild.innerHTML = 'Descrição'
-        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
-        proj2.style.width = '200px'
+        proj_text.children[0].innerHTML = 'Descrição'
+        proj_text.children[1].innerHTML = 'Selecione um projeto'
+        proj0.style.width = '200px'
+        proj_text.removeChild(novoEl)
     }
 })
 // mouse out proj[2]
@@ -212,9 +216,10 @@ proj3.addEventListener('click', () => {
         
     }
     else {
-        proj_text.firstElementChild.innerHTML = 'Descrição'
-        proj_text.lastElementChild.innerHTML = 'Selecione um projeto'
-        proj3.style.width = '200px'
+        proj_text.children[0].innerHTML = 'Descrição'
+        proj_text.children[1].innerHTML = 'Selecione um projeto'
+        proj0.style.width = '200px'
+        proj_text.removeChild(novoEl)
     }
 })
 // mouse out proj[3]
