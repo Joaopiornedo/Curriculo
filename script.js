@@ -14,7 +14,7 @@ const btn0 = btn[0]
 const btn1 = btn[1]
 const btn2 = btn[2]
 btn0.addEventListener('click', () => {
-   article.style.height = '95%'
+    article.style.height = '95%'
     h1.innerHTML = "Hello World 👋🏼"
     h4.innerHTML = "Sou João Piornedo"
     p.innerHTML = "Sou um desenvolvedor web com experiência em projetos de desenvolvimento de sites totalmente responsivos, utilizando tecnologias modernas para garantir a melhor experiência do usuário. Estou constantemente aprendendo e me atualizando sobre novas linguagens e frameworks. Tenho um forte foco em práticas de design responsivo, acessibilidade e otimização de performance, assegurando que os sites funcionem perfeitamente em diversos dispositivos e navegadores."
@@ -41,17 +41,22 @@ const proj = [...document.querySelectorAll('.projeto')]
 const proj_text = document.querySelector('.proj_text')
 const text = [...proj_text.children]
 
-
+if (window.innerWidth > 1400) {
+    text[0].innerHTML = 'Descrição'
+    text[1].innerHTML = '⬅️Selecione um projeto'
+}if (window.innerWidth < 1400) {
+    text[0].innerHTML = 'Descrição'
+    text[1].innerHTML = ' ⬆️Selecione um projeto ⬆️'
+}
 
 
 const texto_p = (texto, descri) => {
     text[0].innerHTML = texto
     text[1].innerHTML = descri
 }
-const remover_texto = () => {
-    text[0].innerHTML = 'Descrição'
-    text[1].innerHTML = '⬅️Selecione um projeto'
-}
+
+
+
 const link_projeto = (site) => {
     text[2].href = site
     text[2].target = 'blank'
@@ -63,6 +68,7 @@ proj.forEach((el, i) => {
     el.addEventListener('click', () => {
         proj.forEach(el => el.classList.remove('proj_selec'));
         el.classList.add('proj_selec');
+
 
         switch (i) {
             case 0:
@@ -91,11 +97,6 @@ proj.forEach((el, i) => {
                 break;
             default:
                 break;
-        }
-
-
-        if (!el.classList.contains('proj_selec')) {
-            remover_texto();
         }
     });
 });
