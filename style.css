@@ -89,7 +89,7 @@ header nav {
 /* Main */
 
 section {
-    min-height: 90vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -104,7 +104,7 @@ section {
 
 }
 .photo{
-    max-width: 200px;
+    width: 250px;
     border-radius: 20px;
     border: inset 5px var(--cor1);
     box-shadow: 0px 5px 30px var(--cor5);
@@ -116,8 +116,6 @@ section {
     border: inset 5px var(--cor1);
     width: 40%;
     height: 10em;
-    max-height: 90%;
-    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +152,7 @@ section {
     border: none;
     height: 1.6em;
     width: 8em;
-    padding: 2px;
+   
     font-size: 0.7em; 
     border-radius: 50px;
     background-color: var(--cor3);
@@ -197,18 +195,37 @@ section {
 #projetos {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), var(--cor3));
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    padding: 2em;
+    display: grid;
+    justify-content: space-evenly;
+    align-items:center ;
+    grid-template-areas: 
+    "pj1  pj2 pj3 pj4 pro_text"
+    ;    
 }
-.projeto {
+
+.projeto{
+    grid-area: pj1;
     background-color:var(--cor3);
     width: 200px;
-    height: 400px;
+    height: 500px;
     border-radius: 20px;
     cursor: pointer;
+}
+.pj1{
+    grid-area: pj1;
+   
+}
+.pj2{
+    grid-area: pj2;
+   
+}
+.pj3{
+    grid-area: pj3;
+    
+}
+.pj4{
+    grid-area: pj4;
+   
 }
 .proj_selec{
     width: 300px !important;
@@ -218,6 +235,7 @@ section {
 }
 
 .proj_text {
+    grid-area: pro_text;
     display: flex;
     flex-direction: column;
     align-items: center;

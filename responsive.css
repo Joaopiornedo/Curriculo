@@ -1,0 +1,411 @@
+@media (max-width:371px) {
+
+    /* Boco 1 - Apresentação */
+    .btn-nav {
+        width: 5em;
+    }
+
+    .artigo {
+        width: 100%;
+        height: 10em;
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 7.5em;
+        padding: 0;
+    }
+
+    /* Tecnologias */
+    #tec {
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    #tec h1 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #tec img {
+        width: 2em;
+    }
+
+    /* Projetos */
+    #projetos {
+        justify-items: center;
+        grid-template-areas:
+            'pj1  pj2'
+            'pj3 pj4 '
+            'pro_text pro_text'
+        ;
+    }
+
+    .projeto {
+        max-width: 150px;
+        height: 100px;
+    }
+
+    .proj_text {
+        width: 90%;
+        height: 450px;
+        font-size: 1em;
+    }
+
+    /* Cursos */
+    .btn-curso img {
+        width: 40px;
+    }
+
+    .diplomas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .certificado {
+        width: 250px;
+        height: 180px;
+        box-shadow: 0px 5px 30px var(--cor3);
+    }
+
+    /* Contato */
+    #contato {
+        gap: 0em;
+        font-size: 13px;
+    }
+    #contato img {
+        max-width: 30px;
+        height: 30px;
+    }
+
+}
+@media (min-width:372px) and (max-width:480px){
+      /* Boco 1 - Apresentação */
+      .btn-nav {
+        width: 5em;
+    }
+
+    .artigo {
+        width: 100%;
+        height: 10em;
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 7.5em;
+        padding: 0;
+    }
+
+    /* Tecnologias */
+    #tec {
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    #tec h1 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #tec img {
+        width: 2em;
+    }
+
+    /* Projetos */
+    #projetos {
+        justify-items: center;
+        grid-template-areas:
+            'pj1  pj2'
+            'pj3 pj4 '
+            'pro_text pro_text'
+        ;
+    }
+
+    .projeto {
+        max-width: 150px;
+        height: 100px;
+    }
+
+    .proj_text {
+        width: 90%;
+        height: 450px;
+        font-size: 1em;
+    }
+
+    /* Cursos */
+    .btn-curso img {
+        width: 40px;
+    }
+
+    .diplomas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .certificado {
+        width: 250px;
+        height: 180px;
+        box-shadow: 0px 5px 30px var(--cor3);
+    }
+
+    /* Contato */
+    #contato {
+        gap: 0em;
+        font-size: 13px;
+    }
+    #contato img {
+        max-width: 30px;
+        height: 30px;
+    }
+
+}
+@media (min-width:481px) and (max-width:680px){
+    /* Boco 1 - Apresentação */
+
+  .artigo {
+      width: 100%;
+      font-size: 1.3em;
+  }
+
+  /* Tecnologias */
+  #tec h1 {
+      font-size: 1.5em;
+      text-align: center;
+  }
+
+  #tec img {
+      width: 2em;
+  }
+
+  /* Projetos */
+  #projetos {
+      justify-items: center;
+      grid-template-areas:
+          'pj1  pj2'
+          'pj3 pj4 '
+          'pro_text pro_text'
+      ;
+  }
+
+  .projeto {
+      max-width: 180px;
+      height: 180px;
+  }
+
+  .proj_text {
+      width: 90%;
+      height: 450px;
+      font-size: 1.1em;
+  }
+
+  /* Cursos */
+  .btn-curso img {
+      width: 40px;
+  }
+
+  .diplomas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .certificado {
+      width: 250px;
+      height: 180px;
+      box-shadow: 0px 5px 30px var(--cor3);
+  }
+
+  /* Contato */
+  #contato img {
+      max-width: 30px;
+      height: 30px;
+  }
+
+}
+@media (min-width:681px) and (max-width:780px){
+    /* Boco 1 - Apresentação */
+
+  .artigo {
+      width: 100%;
+      font-size: 1.3em;
+  }
+
+  /* Tecnologias */
+  #tec h1 {
+      font-size: 1.5em;
+      text-align: center;
+  }
+
+  #tec img {
+      width: 2em;
+  }
+
+  /* Projetos */
+  #projetos {
+      justify-items: center;
+      grid-template-areas:
+          'pj1  pj2'
+          'pj3 pj4 '
+          'pro_text pro_text'
+      ;
+  }
+
+  .projeto {
+      max-width: 180px;
+      height: 180px;
+  }
+
+  .proj_text {
+      width: 90%;
+      height: 450px;
+      font-size: 1.1em;
+  }
+
+  /* Cursos */
+  .btn-curso img {
+      width: 40px;
+  }
+
+  .diplomas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .certificado {
+      width: 250px;
+      height: 180px;
+      box-shadow: 0px 5px 30px var(--cor3);
+  }
+
+
+
+}
+@media (min-width:781px) and (max-width:920px){
+    /* Boco 1 - Apresentação */
+
+  .artigo {
+      width: 80%;
+     
+  }
+
+  /* Tecnologias */
+  #tec h1 {
+      font-size: 2em;
+  }
+
+#tec img {
+      width: 3em;
+  }
+
+  /* Projetos */
+  #projetos {
+      justify-items: center;
+      grid-template-areas:
+          'pj1  pj2'
+          'pj3 pj4 '
+          'pro_text pro_text'
+      ;
+  }
+
+  .projeto {
+      height: 150px;
+  }
+
+  .proj_text {
+      width: 30em;
+      height: 450px;
+      font-size: 1.1em;
+  }
+
+  /* Cursos */
+ 
+
+  .diplomas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .certificado {
+      width: 250px;
+      height: 180px;
+      box-shadow: 0px 5px 30px var(--cor3);
+  }
+
+}
+@media (min-width:921px) and (max-width:1024px){
+    /* Boco 1 - Apresentação */
+
+  .artigo {
+      width: 80%;
+     
+  }
+
+  /* Tecnologias */
+  
+
+#tec img {
+      width: 4em;
+  }
+
+  /* Projetos */
+  #projetos {
+      justify-items: center;
+      grid-template-areas:
+          'pj1  pj2'
+          'pj3 pj4 '
+          'pro_text pro_text'
+      ;
+  }
+
+  .projeto {
+      height: 150px;
+  }
+
+  .proj_text {
+      width: 30em;
+      height: 450px;
+      font-size: 1.1em;
+  }
+
+  /* Cursos */
+  .certificado {
+      width: 250px;
+      height: 180px;
+      box-shadow: 0px 5px 30px var(--cor3);
+  }
+
+}
+/* Mexer  nos projetos */
+@media (min-width:1025px) and (max-width:1200px){
+    /* Boco 1 - Apresentação */
+
+  .artigo {
+      width: 60%;
+  }
+  /* Projetos */
+
+  .projeto{
+    width: 80px;
+}
+  
+
+  /* Cursos */
+  .certificado {
+      width: 320px;
+      height: 225px;
+  }
+
+}
+
+
