@@ -14,21 +14,21 @@ const btn0 = btn[0]
 const btn1 = btn[1]
 const btn2 = btn[2]
 btn0.addEventListener('click', () => {
-    article.style.height = '20em'
+   article.style.height = '90%'
     h1.innerHTML = "Hello World 👋🏼"
     h4.innerHTML = "Sou João Piornedo"
     p.innerHTML = "Sou um desenvolvedor web com experiência em projetos de desenvolvimento de sites totalmente responsivos, utilizando tecnologias modernas para garantir a melhor experiência do usuário. Estou constantemente aprendendo e me atualizando sobre novas linguagens e frameworks. Tenho um forte foco em práticas de design responsivo, acessibilidade e otimização de performance, assegurando que os sites funcionem perfeitamente em diversos dispositivos e navegadores."
 })
 //Botão 1 Objetivos
 btn1.addEventListener('click', () => {
-    article.style.height = '20em'
+    article.style.height = '90%'
     h1.innerHTML = "Meus Objetivos"
     h4.innerHTML = ""
     p.innerHTML = "Meu objetivo é me juntar a uma grande empresa onde eu possa me especializar e crescer profissionalmente. Com foco, determinação e uma facilidade notável para aprender, estou comprometido em me tornar um especialista em minha área. Acredito que trabalhar em um ambiente desafiador e inovador me permitirá aprimorar minhas habilidades e contribuir significativamente para projetos de alto impacto."
 })
 //Botão 1 Área de Estudos
 btn2.addEventListener('click', () => {
-    article.style.height = '20em'
+    article.style.height = '90%'
     h1.innerHTML = "Áreas de Estudo"
     h4.innerHTML = ""
     p.innerHTML = "Atualmente, estou estudando tecnologias como React, Node.js e JavaScript avançado. Estou sempre em busca de aprender e dominar novas tecnologias, mantendo-me atualizado e aprimorando minhas habilidades continuamente. Acredito que o aprendizado constante é fundamental para o crescimento profissional e para estar à frente no mercado de tecnologia."
@@ -36,192 +36,75 @@ btn2.addEventListener('click', () => {
 
 
 // // Projetos:
-const proj_text = document.querySelector('.proj_text')
+
 const proj = [...document.querySelectorAll('.projeto')]
-const proj0 = proj[0]
-const proj1 = proj[1]
-const proj2 = proj[2]
-const proj3 = proj[3]
-const proj4 = proj[4]
-const novoEl = document.createElement('a')
-novoEl.setAttribute('class', 'vermais')
-novoEl.target = 'blank'
-novoEl.style.display = 'flex'
-novoEl.style.alignContent = 'certer'
-novoEl.style.justifyContent = 'center'
-novoEl.innerHTML = 'Veja Mais'
+const proj_text = document.querySelector('.proj_text')
+const text = [...proj_text.children]
+
+
+
+
+const texto_p = (texto, descri) => {
+    text[0].innerHTML = texto
+    text[1].innerHTML = descri
+}
+const remover_texto = () => {
+    text[0].innerHTML = 'Descrição'
+    text[1].innerHTML = '⬅️Selecione um projeto'
+}
+const link_projeto = (site) => {
+    text[2].href = site
+    text[2].target = 'blank'
+    text[2].innerHTML = ' Ver Mais'
+    text[2].classList.add('vermais')
+}
+//Proj[0] Animals:
+proj.forEach((el, i) => {
+    el.addEventListener('click', () => {
+        proj.forEach(el => el.classList.remove('proj_selec'));
+        el.classList.add('proj_selec');
+
+        switch (i) {
+            case 0:
+                link_projeto('https://joaopiornedo.github.io/Animals/');
+                texto_p('Page Animals', 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.');
+                break;
+            case 1:
+                link_projeto('https://joaopiornedo.github.io/projeto-cordel-curso/');
+                texto_p('Page Poema', 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.');
+                break;
+            case 2:
+                link_projeto('https://joaopiornedo.github.io/landing_page_cyberpunk/');
+                texto_p('Page Cyber Punk', 'Este projeto é uma landing page futurista com design responsivo, que utiliza HTML semântico, CSS com Flexbox e Grid, e JavaScript para criar interatividade e efeitos dinâmicos. A página combina tecnologia avançada com uma estética imersiva para capturar a essência do universo cyberpunk.');
+                break;
+            case 3:
+                link_projeto('https://joaopiornedo.github.io/page-games/');
+                texto_p('Page Games', 'Este projeto apresenta uma série de jogos interativos com uma interface responsiva e estilizada. Utilizando HTML, CSS e JavaScript, o projeto combina design moderno com funcionalidades dinâmicas para oferecer uma experiência envolvente. As animações e transições melhoram a interatividade, enquanto a estrutura responsiva garante compatibilidade em diversos dispositivos e tamanhos de tela.');
+                break;
+            case 4:
+                link_projeto('');
+                texto_p('Page 4', 'projeto 4');
+                break;
+            case 5:
+                link_projeto('');
+                texto_p('Page 5', 'projeto 5');
+                break;
+            default:
+                break;
+        }
+
+
+        if (!el.classList.contains('proj_selec')) {
+            remover_texto();
+        }
+    });
+});
 
 
 
 
 
-//Proj[0] Animals
-proj0.style.backgroundImage = "url('./imgs/site1.PNG')";
-proj0.style.backgroundPosition = 'left 7%  top 25%'
-proj0.addEventListener('mouseover', () => {
-    proj0.style.backgroundImage = "url('./imgs/site1.PNG')";
-    proj0.style.backgroundPosition = 'left  top 35%'
-    proj0.style.width = '300px'
-    proj0.style.transition = ' 1s'
-})
-//selecionar proj[0]
-proj0.addEventListener('click', () => {
-    novoEl.setAttribute('href', 'https://joaopiornedo.github.io/Animals/')
-    proj_text.appendChild(novoEl)
-    proj1.classList.remove('proj_selec')
-    proj2.classList.remove('proj_selec')
-    proj3.classList.remove('proj_selec')
-    proj0.classList.toggle('proj_selec')
-    if (proj0.classList.contains('proj_selec')) {
-        proj_text.children[0].innerHTML = 'Page Animals'
-        proj_text.children[1].innerHTML = 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.'
-    }
-    else {
-        proj_text.children[0].innerHTML = 'Descrição'
-        proj_text.children[1].innerHTML = 'Selecione um projeto'
-        proj0.style.width = '200px'
-        proj_text.removeChild(novoEl)
-
-    }
-})
-// mouse out proj[0]
-proj0.addEventListener('mouseout', () => {
-    if (proj0.classList.contains('proj_selec')) {
-        proj0.style.backgroundPosition = 'left  top 35%'
-    }
-    else {
-        proj0.style.backgroundPosition = 'left 7%  top 25%'
-        proj0.style.width = '200px'
-    }
-})
-
-//Proj[1] Poema
-proj1.style.backgroundImage = "url('./imgs/site2.PNG')";
-proj1.style.backgroundPosition = 'right'
-proj1.style.backgroundSize = 'cover'
-
-proj1.addEventListener('mouseover', () => {
-    proj1.style.backgroundImage = "url('./imgs/site2.PNG')";
-    proj1.style.width = '300px'
-    proj1.style.backgroundPosition = 'left center'
-    proj1.style.transition = ' 1s'
-})
-//selecionar proj[1]
-proj1.addEventListener('click', () => {
-    novoEl.setAttribute('href', 'https://joaopiornedo.github.io/projeto-cordel-curso/')
-    proj_text.appendChild(novoEl)
-    proj0.classList.remove('proj_selec')
-    proj2.classList.remove('proj_selec')
-    proj3.classList.remove('proj_selec')
-    proj1.classList.toggle('proj_selec')
-    if (proj1.classList.contains('proj_selec')) {
-        proj1.style.backgroundPosition = 'left center'
-        proj_text.children[0].innerHTML = 'Page Poema'
-        proj_text.children[1].innerHTML = 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.'
-    }
-    else {
-        proj_text.children[0].innerHTML = 'Descrição'
-        proj_text.children[1].innerHTML = 'Selecione um projeto'
-        proj0.style.width = '200px'
-        proj_text.removeChild(novoEl)
-
-    }
-})
-// mouse out proj[1]
-proj1.addEventListener('mouseout', () => {
-    if (proj1.classList.contains('proj_selec')) {
-        proj1.style.backgroundPosition = 'left center'
-    }
-    else {
-        proj1.style.backgroundPosition = 'right'
-        proj1.style.width = '200px'
-    }
-})
 //////////////////////////////////////////////////////////////////////////////
-//Proj[2] Games
-proj2.style.backgroundImage = "url('./imgs/site4.PNG')";
-proj2.style.backgroundPosition = 'center left 25%'
-proj2.style.backgroundSize = 'cover'
-
-proj2.addEventListener('mouseover', () => {
-    proj2.style.width = '300px'
-    proj2.style.backgroundPosition = 'center left 20%'
-    proj2.style.transition = ' 1s'
-})
-//selecionar proj[2]
-proj2.addEventListener('click', () => {
-    novoEl.setAttribute('href', 'https://joaopiornedo.github.io/page-games/')
-    proj_text.appendChild(novoEl)
-    proj0.classList.remove('proj_selec')
-    proj1.classList.remove('proj_selec')
-    proj3.classList.remove('proj_selec')
-    proj2.classList.toggle('proj_selec')
-    if (proj2.classList.contains('proj_selec')) {
-        proj2.style.backgroundPosition = 'center left 20%'
-        proj_text.children[0].innerHTML = 'Page Games'
-        proj_text.children[1].innerHTML = ''
-    }
-    else {
-        proj_text.children[0].innerHTML = 'Descrição'
-        proj_text.children[1].innerHTML = 'Selecione um projeto'
-        proj0.style.width = '200px'
-        proj_text.removeChild(novoEl)
-    }
-})
-// mouse out proj[2]
-proj2.addEventListener('mouseout', () => {
-    if (proj2.classList.contains('proj_selec')) {
-        proj2.style.backgroundPosition = 'center left 20%'
-    }
-    else {
-        proj2.style.backgroundPosition = 'center left 25%'
-        proj2.style.width = '200px'
-    }
-})
-
-//Proj[3] Cyber Punk
-proj3.style.backgroundImage = "url('./imgs/site3.PNG')";
-proj3.style.backgroundPosition = 'center left 10% '
-proj3.style.backgroundSize = 'cover'
-
-proj3.addEventListener('mouseover', () => {
-    proj3.style.backgroundImage = "url('./imgs/site3.PNG')";
-    proj3.style.width = '300px'
-    proj3.style.backgroundPosition = 'left center'
-    proj3.style.transition = ' 1s'
-})
-//selecionar proj[3]
-proj3.addEventListener('click', () => {
-    novoEl.setAttribute('href', 'https://joaopiornedo.github.io/landing_page_cyberpunk/')
-    proj_text.appendChild(novoEl)
-    proj0.classList.remove('proj_selec')
-    proj1.classList.remove('proj_selec')
-    proj2.classList.remove('proj_selec')
-    proj3.classList.toggle('proj_selec')
-    if (proj3.classList.contains('proj_selec')) {
-        proj3.style.backgroundPosition = 'left center'
-        proj_text.children[0].innerHTML = 'Page Cyber Punk'
-        proj_text.children[1].innerHTML = ''
-
-    }
-    else {
-        proj_text.children[0].innerHTML = 'Descrição'
-        proj_text.children[1].innerHTML = 'Selecione um projeto'
-        proj0.style.width = '200px'
-        proj_text.removeChild(novoEl)
-    }
-})
-// mouse out proj[3]
-proj3.addEventListener('mouseout', () => {
-    if (proj3.classList.contains('proj_selec')) {
-        proj3.style.backgroundPosition = 'center left  '
-    }
-    else {
-        proj3.style.backgroundPosition = 'center left 10% '
-        proj3.style.width = '200px'
-    }
-})
-
 //Diplomas / Certificados:
 const diplomas = document.querySelector('.diplomas')
 const certificados = [...diplomas.children]

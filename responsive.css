@@ -6,8 +6,7 @@
     }
 
     .artigo {
-        width: 100%;
-        height: 10em;
+        width: 90%;
         font-size: 1em;
     }
 
@@ -34,17 +33,17 @@
 
     /* Projetos */
     #projetos {
-        justify-items: center;
         grid-template-areas:
-            'pj1  pj2'
-            'pj3 pj4 '
-            'pro_text pro_text'
+            'pj1  pj2 pj3'
+            'pj4 pj5 pj6'
+            'pro_text pro_text pro_text'
         ;
+
     }
 
     .projeto {
-        max-width: 150px;
-        height: 100px;
+        max-width: 100px;
+        height: 150px;
     }
 
     .proj_text {
@@ -89,8 +88,7 @@
     }
 
     .artigo {
-        width: 100%;
-        height: 10em;
+        width: 90%;
         font-size: 1em;
     }
 
@@ -117,17 +115,17 @@
 
     /* Projetos */
     #projetos {
-        justify-items: center;
         grid-template-areas:
-            'pj1  pj2'
-            'pj3 pj4 '
-            'pro_text pro_text'
+            'pj1  pj2 pj3'
+            'pj4 pj5 pj6'
+            'pro_text pro_text pro_text'
         ;
+
     }
 
     .projeto {
-        max-width: 150px;
-        height: 100px;
+        max-width: 100px;
+        height: 150px;
     }
 
     .proj_text {
@@ -169,8 +167,8 @@
     /* Boco 1 - Apresentação */
 
   .artigo {
-      width: 100%;
-      font-size: 1.3em;
+      width: 90%;
+      font-size: 1.em;
   }
 
   /* Tecnologias */
@@ -183,20 +181,20 @@
       width: 2em;
   }
 
-  /* Projetos */
-  #projetos {
-      justify-items: center;
-      grid-template-areas:
-          'pj1  pj2'
-          'pj3 pj4 '
-          'pro_text pro_text'
-      ;
-  }
+ /* Projetos */
+ #projetos {
+    grid-template-areas:
+        'pj1  pj2 pj3'
+        'pj4 pj5 pj6'
+        'pro_text pro_text pro_text'
+    ;
 
-  .projeto {
-      max-width: 180px;
-      height: 180px;
-  }
+}
+
+.projeto {
+    max-width: 100px;
+    height: 150px;
+}
 
   .proj_text {
       width: 90%;
@@ -247,20 +245,20 @@
       width: 2em;
   }
 
-  /* Projetos */
-  #projetos {
-      justify-items: center;
-      grid-template-areas:
-          'pj1  pj2'
-          'pj3 pj4 '
-          'pro_text pro_text'
-      ;
-  }
+ /* Projetos */
+ #projetos {
+    grid-template-areas:
+        'pj1  pj2 pj3'
+        'pj4 pj5 pj6'
+        'pro_text pro_text pro_text'
+    ;
 
-  .projeto {
-      max-width: 180px;
-      height: 180px;
-  }
+}
+
+.projeto {
+    max-width: 200px;
+    height: 150px;
+}
 
   .proj_text {
       width: 90%;
@@ -306,26 +304,20 @@
       width: 3em;
   }
 
-  /* Projetos */
-  #projetos {
-      justify-items: center;
-      grid-template-areas:
-          'pj1  pj2'
-          'pj3 pj4 '
-          'pro_text pro_text'
-      ;
-  }
+ /* Projetos */
+ #projetos {
+    grid-template-areas:
+        'pj1  pj2 pj3'
+        'pj4 pj5 pj6'
+        'pro_text pro_text pro_text'
+    ;
 
-  .projeto {
-      height: 150px;
-  }
+}
 
-  .proj_text {
-      width: 30em;
-      height: 450px;
-      font-size: 1.1em;
-  }
-
+.projeto {
+    max-width: 200px;
+    height: 150px;
+}
   /* Cursos */
  
 
@@ -359,18 +351,19 @@
   }
 
   /* Projetos */
-  #projetos {
-      justify-items: center;
-      grid-template-areas:
-          'pj1  pj2'
-          'pj3 pj4 '
-          'pro_text pro_text'
-      ;
-  }
+ #projetos {
+    grid-template-areas:
+        'pj1  pj2 pj3'
+        'pj4 pj5 pj6'
+        'pro_text pro_text pro_text'
+    ;
 
-  .projeto {
-      height: 150px;
-  }
+}
+
+.projeto {
+    max-width: 250px;
+    height: 150px;
+}
 
   .proj_text {
       width: 30em;
@@ -394,11 +387,19 @@
       width: 60%;
   }
   /* Projetos */
+  #projetos {
+    grid-template-areas:
+        'pj1  pj2 pj3'
+        'pj4 pj5 pj6'
+        'pro_text pro_text pro_text'
+    ;
 
-  .projeto{
-    width: 80px;
 }
-  
+
+.projeto {
+    max-width: 250px;
+    height: 150px;
+}
 
   /* Cursos */
   .certificado {
