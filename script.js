@@ -44,7 +44,7 @@ const text = [...proj_text.children]
 if (window.innerWidth > 1400) {
     text[0].innerHTML = 'Descrição'
     text[1].innerHTML = '⬅️Selecione um projeto'
-}if (window.innerWidth < 1400) {
+} if (window.innerWidth < 1400) {
     text[0].innerHTML = 'Descrição'
     text[1].innerHTML = ' ⬆️Selecione um projeto ⬆️'
 }
@@ -107,11 +107,13 @@ proj.forEach((el, i) => {
 
 //////////////////////////////////////////////////////////////////////////////
 //Diplomas / Certificados:
+
 const diplomas = document.querySelector('.diplomas')
 const certificados = [...diplomas.children]
 const cert0 = certificados[0]
 const cert1 = certificados[1]
 const cert2 = certificados[2]
+
 
 // Certificado 0
 cert0.style.backgroundImage = 'url(./imgs/certificado1.PNG)'
@@ -125,6 +127,23 @@ cert1.style.backgroundPosition = 'center center'
 cert2.style.backgroundImage = 'url(./imgs/certificado3.PNG)'
 cert2.style.backgroundSize = 'cover'
 cert2.style.backgroundPosition = 'center center'
+
+////// COMANDOS BOTÕES CERTIFICADOS:
+const btn_cert = document.querySelector('.btn-curso')
+
+btn_cert.children[0].addEventListener('click', () => {
+    cert0.style.backgroundImage = 'url(./imgs/certificado1.PNG)'
+    cert1.style.backgroundImage = 'url(./imgs/certificado2.PNG)'
+    cert2.style.backgroundImage = 'url(./imgs/certificado3.PNG)'
+
+})
+
+btn_cert.children[1].addEventListener('click', () => {
+    cert0.style.backgroundImage = 'url(./imgs/certificado2.PNG)'
+    cert1.style.backgroundImage = 'url(./imgs/certificado3.PNG)'
+    cert2.style.backgroundImage = 'url(./imgs/certificado4.PNG)'
+
+})
 
 
 
