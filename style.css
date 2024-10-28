@@ -277,9 +277,11 @@ section {
 }
 
 .proj_text h1  {
+    text-align: center;
     font-size: 2em;
     color: var(--cor3);
     font-family: 'Evelins';
+    line-height: 1em;
 }
 .vermais{
     display: flex;

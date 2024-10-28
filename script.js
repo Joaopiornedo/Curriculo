@@ -73,23 +73,23 @@ proj.forEach((el, i) => {
         switch (i) {
             case 0:
                 link_projeto('https://joaopiornedo.github.io/Animals/');
-                texto_p('Page Animals', 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.');
+                texto_p('Animals', 'Este projeto consiste em uma página web interativa, focada em artigos sobre animais. O design incorpora um layout dinâmico e cores vibrantes, criando uma experiência visual cativante para o usuário. O site é 100% responsivo, garantindo uma navegação fluida em qualquer dispositivo. Foram testadas diversas paletas de cores para atrair e envolver os usuários, além de animações sutis que melhoram a fluidez do site e a experiência de navegação.');
                 break;
             case 1:
                 link_projeto('https://joaopiornedo.github.io/projeto-cordel-curso/');
-                texto_p('Page Poema', 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.');
+                texto_p('Poema', 'Este projeto foi desenvolvido com o objetivo de aplicar o efeito parallax em uma página web de layout responsivo. O conteúdo principal é um poema, complementado por animações de scroll que aprimoram a interatividade do usuário. O site foi inicialmente criado como parte de um exercício de um curso que fiz, mas foi adaptado e aprimorado com melhorias significativas.');
                 break;
             case 2:
                 link_projeto('https://joaopiornedo.github.io/landing_page_cyberpunk/');
-                texto_p('Page Cyber Punk', 'Este projeto é uma landing page futurista com design responsivo, que utiliza HTML semântico, CSS com Flexbox e Grid, e JavaScript para criar interatividade e efeitos dinâmicos. A página combina tecnologia avançada com uma estética imersiva para capturar a essência do universo cyberpunk.');
+                texto_p('Cyber Punk', 'Este projeto é uma landing page futurista com design responsivo, que utiliza HTML semântico, CSS com Flexbox e Grid, e JavaScript para criar interatividade e efeitos dinâmicos. A página combina tecnologia avançada com uma estética imersiva para capturar a essência do universo cyberpunk.');
                 break;
             case 3:
                 link_projeto('https://joaopiornedo.github.io/page-games/');
-                texto_p('Page Games', 'Este projeto apresenta uma série de jogos interativos com uma interface responsiva e estilizada. Utilizando HTML, CSS e JavaScript, o projeto combina design moderno com funcionalidades dinâmicas para oferecer uma experiência envolvente. As animações e transições melhoram a interatividade, enquanto a estrutura responsiva garante compatibilidade em diversos dispositivos e tamanhos de tela.');
+                texto_p(' Games', 'Este projeto apresenta uma série de jogos interativos com uma interface responsiva e estilizada. Utilizando HTML, CSS e JavaScript, o projeto combina design moderno com funcionalidades dinâmicas para oferecer uma experiência envolvente. As animações e transições melhoram a interatividade, enquanto a estrutura responsiva garante compatibilidade em diversos dispositivos e tamanhos de tela.');
                 break;
             case 4:
-                link_projeto('');
-                texto_p('Page 4', 'projeto 4');
+                link_projeto('https://mg-moveis-e-granitos.vercel.app/');
+                texto_p('Gerador de Orçamentos PDF Web', 'Este código JavaScript, integrado a um site HTML e CSS, gera um orçamento em PDF com base nos dados inseridos pelo usuário. Ao clicar no botão "Gerar", ele captura as informações do formulário, calcula os valores totais e cria um PDF formatado com um template de fundo usando a biblioteca jsPDF.');
                 break;
             case 5:
                 link_projeto('');
